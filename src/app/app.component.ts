@@ -18,7 +18,7 @@ export class AppComponent {
     this.refreshData();
     this.interval = setInterval(() => {
       this.refreshData();
-    }, 30000);
+    }, 10000);
   }
 
   refreshData() {
