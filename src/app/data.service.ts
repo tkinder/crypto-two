@@ -8,6 +8,7 @@ import { map } from 'rxjs/operators'
 })
 export class DataService {
   result: any;
+  private _data: any;
 
   constructor(private _http: HttpClient) {}
 
@@ -19,5 +20,6 @@ export class DataService {
       )
       .pipe(map((result: any) => (this.result = result)));
   }
-}
+
+  }
 
