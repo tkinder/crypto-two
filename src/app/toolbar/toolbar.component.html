@@ -1,0 +1,21 @@
+<mat-menu color="primary" #appMenu="matMenu" class="custom-class">
+  <button mat-menu-item [routerLink]="['']" routerLinkActive="router-link-active" >Home</button>
+  <button mat-menu-item a routerLink="./news">News</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+
+<!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu yPosition="below" #menu="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu> -->
+<!-- <button mat-button [matMenuTriggerFor]="fileMenu">Menu</button>
+<mat-menu #fileMenu="matMenu">
+  <button mat-menu-item>Hello</button>
+  <button mat-menu-item>Goodbye</button>
+</mat-menu> -->
+
+

@@ -1,6 +1,9 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <span><a class="toolbar-link">Crytpo Prices</a></span>
+  <span class="toolbar-spacer"></span>
+<app-toolbar></app-toolbar>
+</mat-toolbar>
 
-<!-- <div class="div-col-md-12"> -->
 <div style="text-align:center">
   <h2> Crypto Prices </h2>
 </div>
@@ -115,15 +118,17 @@
   </svg>
 </div>
 <br>
-<div *ngIf="cryptos">
+<!-- <div *ngIf="cryptos">
   <div id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
     <span class="left">{{ crypto }}</span>
     <span class="right">{{ cryptos[crypto].USD | currency:'USD':true }}</span>
   </div>
-</div>
-<hr>
-<br>
-<!-- <app-news></app-news> -->
+</div> -->
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
 <br>
 <div style="text-align:center">
   Price API provided by <a href="https://min-api.cryptocompare.com">CryptoCompare</a> under
@@ -133,4 +138,6 @@
 <div style="text-align:center">
   Based on <a href="https://github.com/designcourse/angular-crypto">angular-crypto</a>
 </div>
-<!-- </div> -->
+
+
+

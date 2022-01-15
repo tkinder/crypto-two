@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { DataService } from './data.service';
+import { DataService } from '../data.service';
+
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
 })
-export class AppComponent {
+export class HomeComponent {
   title = 'crypto-two';
   objectKeys = Object.keys;
   cryptos: any;
@@ -29,4 +31,3 @@ export class AppComponent {
     });
   }
 }
-
