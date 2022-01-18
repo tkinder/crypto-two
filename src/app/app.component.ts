@@ -20,7 +20,10 @@ export class AppComponent {
     this.interval = setInterval(() => {
       this.refreshData();
     }, 10000);
-  }
+
+    }
+
+
 
   refreshData() {
     this._data.getPrices().subscribe((res) => {
