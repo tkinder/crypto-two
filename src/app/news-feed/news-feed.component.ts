@@ -7,6 +7,9 @@ import { NewsApiService } from '../news-api.service';
   styleUrls: ['./news-feed.component.css'],
 })
 export class NewsFeedComponent {
+  static use(_arg0: any) {
+    throw new Error('Method not implemented.');
+  }
   mArticles: Array<any>;
   mSources: Array<any>;
 
@@ -32,6 +35,10 @@ export class NewsFeedComponent {
       .subscribe((data) => JSON.stringify((this.mArticles = data['articles'])));
   }
 }
+
+//const cors = require('cors');
+//const app = NewsFeedComponent
+//app.use(cors());
 
 declare var require: any;
 
