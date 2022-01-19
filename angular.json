@@ -69,10 +69,11 @@
           "configurations": {
             "production": {
               "browserTarget": "crypto-two:build:production",
-              "proxyConfig": "src/proxy.conf.json"
+              "proxyConfig": "./proxy.conf.json"
             },
             "development": {
-              "browserTarget": "crypto-two:build:development"
+              "browserTarget": "crypto-two:build:development",
+              "proxyConfig": "./proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

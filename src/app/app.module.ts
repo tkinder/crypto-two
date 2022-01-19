@@ -31,6 +31,7 @@ import { NewsApiService } from './news-api.service';
     MaterialModule,
     BrowserAnimationsModule,
     RouterModule,
+
   ],
   providers: [DataService, NewsApiService],
   bootstrap: [AppComponent],

@@ -1,4 +1,3 @@
-import { HttpResponse } from '@angular/common/http';
 import { Component} from '@angular/core';
 import { NewsApiService } from '../news-api.service';
 
@@ -43,7 +42,7 @@ export class NewsFeedComponent {
 //app.use(cors());
 
 declare var require: any;
-declare var header: any;
+// declare var header: any;
 
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('35ca3239aa754462b51bb38b221afbbc');
