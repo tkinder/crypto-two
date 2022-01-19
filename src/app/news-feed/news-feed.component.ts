@@ -21,18 +21,19 @@ export class NewsFeedComponent {
     //load articles
     this.newsapi
       .initArticles()
-      .subscribe((data) => JSON.stringify((this.mArticles = data['articles'])));
+      .subscribe((data) => ((this.mArticles = data['articles'])));
     //load news sources
     this.newsapi
       .initSources()
-      .subscribe((data) => JSON.stringify((this.mSources = data['sources'])));
+      .subscribe((data) => ((this.mSources = data['sources'])));
+
   }
 
   searchArticles(source) {
     console.log('selected source is: ' + source);
     this.newsapi
       .getArticlesByID(source)
-      .subscribe((data) => JSON.stringify((this.mArticles = data['articles'])));
+      .subscribe((data) => ((this.mArticles = data['articles'])));
   }
 }
 
@@ -41,6 +42,7 @@ export class NewsFeedComponent {
 //app.use(cors());
 
 declare var require: any;
+declare var header: any;
 
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('35ca3239aa754462b51bb38b221afbbc');
@@ -60,6 +62,7 @@ newsapi.v2.everything({
   page: 2
 }).then((response: any) => {
   console.log(response);
+
   /*
     {
       status: "ok",
@@ -67,4 +70,3 @@ newsapi.v2.everything({
     }
   */
 });
-
