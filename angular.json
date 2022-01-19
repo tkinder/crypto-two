@@ -68,12 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "crypto-two:build:production",
-              "proxyConfig": "./proxy.conf.json"
+              "browserTarget": "crypto-two:build:production"
             },
             "development": {
-              "browserTarget": "crypto-two:build:development",
-              "proxyConfig": "./proxy.conf.json"
+              "browserTarget": "crypto-two:build:development"
             }
           },
           "defaultConfiguration": "development"
