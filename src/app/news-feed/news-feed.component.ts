@@ -17,17 +17,17 @@ export class NewsFeedComponent {
     console.log('app component constructor called');
   }
 
-  ngOnInit() {
-    //load articles
-    this.newsapi
-      .initArticles()
-      .subscribe((data) => ((this.mArticles = data['articles'])));
-    //load news sources
-    this.newsapi
-      .initSources()
-      .subscribe((data) => ((this.mSources = data['sources'])));
+  // ngOnInit() {
+  //   //load articles
+  //   this.newsapi
+  //     .initArticles()
+  //     .subscribe((data) => ((this.mArticles = data['articles'])));
+  //   //load news sources
+  //   this.newsapi
+  //     .initSources()
+  //     .subscribe((data) => ((this.mSources = data['sources'])));
 
-  }
+  // }
 
   searchArticles(source) {
     console.log('selected source is: ' + source);
@@ -51,21 +51,21 @@ const newsapi = new NewsAPI('35ca3239aa754462b51bb38b221afbbc');
 
 // To query /v2/everything
 // You must include at least one q, source, or domain
-newsapi.v2.everything({
-  q: 'bitcoin',
-  sources: 'bbc-news,the-verge',
-  domains: 'bbc.co.uk, techcrunch.com',
-  from: '2021-01-01',
-  to: '2022-12-31',
-  language: 'en',
-  sortBy: 'relevancy',
-  page: 1
-}).then((response => {
-  console.log(response);
+// newsapi.v2.everything({
+//   q: 'bitcoin',
+//   sources: 'bbc-news,the-verge',
+//   domains: 'bbc.co.uk, techcrunch.com',
+//   from: '2021-01-01',
+//   to: '2022-12-31',
+//   language: 'en',
+//   sortBy: 'relevancy',
+//   page: 1
+// }).then((response => {
+//   console.log(response);
   /*
     {
       status: "ok",
       articles: [...]
     }
   */
-}))
+
