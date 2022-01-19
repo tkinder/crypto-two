@@ -15,7 +15,6 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { NewsApiService } from './news-api.service';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +30,7 @@ import { NewsApiService } from './news-api.service';
     MaterialModule,
     BrowserAnimationsModule,
     RouterModule,
+
 
   ],
   providers: [DataService, NewsApiService],
