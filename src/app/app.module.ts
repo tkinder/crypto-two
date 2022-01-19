@@ -13,7 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { NewsApiService } from './news-api.service';
-
+import { NewsapiService } from './newsapiservice.service';
+import { ArticlesBitcoinComponent } from './articles-bitcoin/articles-bitcoin.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NewsApiService } from './news-api.service';
     HomeComponent,
     ToolbarComponent,
     NewsFeedComponent,
+    ArticlesBitcoinComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { NewsApiService } from './news-api.service';
 
 
   ],
-  providers: [DataService, NewsApiService],
+  providers: [DataService, NewsApiService, NewsapiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

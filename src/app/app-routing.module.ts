@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { HomeComponent } from './home/home.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ArticlesBitcoinComponent } from './articles-bitcoin/articles-bitcoin.component';
 
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'news', component: NewsFeedComponent },
+  { path: 'news', component: ArticlesBitcoinComponent },
   { path: 'toolbar', component: ToolbarComponent},
 ];
 
