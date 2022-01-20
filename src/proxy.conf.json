@@ -1,3 +1,11 @@
+{
+    "/api/*": {
+        "target": "https://newsapi.org/v2/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
+
 // {
 //     "/api": {
 //       "target": "https://newsapi.org/v2/",
@@ -8,10 +16,4 @@
 //       }
 //     }
 //   }
-{
-    "/api/*": {
-        "target": "https://newsapi.org/v2/",
-        "secure": false,
-        "logLevel": "debug"
-    }
-}
+
