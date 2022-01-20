@@ -17,3 +17,4 @@ export class ArticlesBitcoinComponent implements OnInit {
     this.BCarticles$ = this.newsapi.getArticlesBitcoin();
   }
 }
+//Nothing to see here
