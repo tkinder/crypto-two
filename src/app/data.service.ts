@@ -21,12 +21,12 @@ export class DataService {
       .pipe(map((result: any) => (this.result = result)));
   }
 
-   getData() {
-    return this._http
-      .get(
-        'https://min-api.cryptocompare.com/data/v2/news/?lang=EN'
-      )
-      .pipe(map((result: any) => (this.result = result)));
+  //  getData() {
+  //   return this._http
+  //     .get(
+  //       'https://min-api.cryptocompare.com/data/v2/news/?lang=EN'
+  //     )
+  //     .pipe(map((result: any) => (this.result = result)));
 
-  }
+  // }
 }
