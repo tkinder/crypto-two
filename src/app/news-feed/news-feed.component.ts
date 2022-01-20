@@ -29,24 +29,24 @@ export class NewsFeedComponent {
 
   // }
 
-  searchArticles(source) {
-    console.log('selected source is: ' + source);
-    this.newsapi
-      .getArticlesByID(source)
-      .subscribe((data) => ((this.mArticles = data['articles'])));
-  }
-}
+//   searchArticles(source) {
+//     console.log('selected source is: ' + source);
+//     this.newsapi
+//       .getArticlesByID(source)
+//       .subscribe((data) => ((this.mArticles = data['articles'])));
+//   }
+// }
 
 //const cors = require('cors');
 //const app = NewsFeedComponent
 //app.use(cors());
 
-declare var require: any;
+// declare var require: any;
 // declare var header: any;
 
-const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('35ca3239aa754462b51bb38b221afbbc');
-// To query /v2/top-headlines
+// const NewsAPI = require('newsapi');
+// const newsapi = new NewsAPI('35ca3239aa754462b51bb38b221afbbc');
+// // To query /v2/top-headlines
 // All options passed to topHeadlines are optional, but you need to include at least one of them
 
 // To query /v2/everything
@@ -68,4 +68,4 @@ const newsapi = new NewsAPI('35ca3239aa754462b51bb38b221afbbc');
       articles: [...]
     }
   */
-
+  }
